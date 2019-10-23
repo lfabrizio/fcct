@@ -21,5 +21,5 @@ function destroyer(arr) {
     console.log(destroy);
     return destroy;
 }
-  
+  // T 54 mins
   destroyer([1, 2, 3, 1, 2, 3], 2, 3);
