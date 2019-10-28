@@ -10,5 +10,5 @@ function confirmEnding(str, target) {
 
     return ending === target;;
   }
-  
+  // ti = 2:34
   confirmEnding("Bastian", "n");
