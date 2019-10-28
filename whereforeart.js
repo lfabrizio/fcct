@@ -5,15 +5,20 @@ function whatIsInAName(collection, source) {
     var arr = [];
     // Only change code below this line
     // // use Object.keys()
+// loop through the number of object keys
     var test = Object.keys(collection);
     var test2 = Object.keys(source);
 //    var test = Object.prototype.hasOwnProperty(collection);
     console.log(test2);
     for(var i = 0;i < collection.length; i++){
+        var test3 = true;
+    for(var j = 0; j < test2.length;i++){
+
         if(collection[i].hasOwnProperty(source)){
             console.log(collection)
             return collection;
         }
+
     }
     // Only change code above this line
     return arr;
