@@ -10,13 +10,14 @@ var result = 0;
 while(n2 <= num){
     if(n2 % 2 !== 0){
         result += n2;
-        console.log(result)
     }
+    n2 += n1;
+    n1 = n2 - n1;
 }
-        
+return result; 
     }
 
-
+// time elapsed. full time
     return num;
   
   
