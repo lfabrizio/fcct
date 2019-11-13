@@ -4,7 +4,7 @@
 // The provided number may not be a prime.
 
 function sumPrimes(num) {
-    // create an empty arr
+    // create an empty array 
 var arr = [];
 // nested for loop
 for(var i = 2; i <= num; i++){
