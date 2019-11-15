@@ -2,17 +2,15 @@
 
 function steamrollArray(arr) {
 // I'm a steamroller, baby
-    var arrayone = arr.length;
-    console.log(arrayone)
-    for(var i = 0; i < arr;i++){
-        if(Array.isArray(arrayone[i])){
-           for(var j = 0; j < arr[i].length;j++){
-               arr.push(arr[i][j]);
-               console.log(arrayone)
-           }
+// use Array.isArray method
+    
+    return arr.reduce(function(a, b){
+        if(Array.isArray(b)){
+            return steamrollArray(a.concat(b));
+        } else {
+            return a.concat(b);
         }
-    }
-    return arr;
-  }
-  
+    }, [])} 
+   
+  // time elapsed 1:50 mins
   steamrollArray([1, [2], [3, [[4]]]]);
